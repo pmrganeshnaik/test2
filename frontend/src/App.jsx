@@ -12,7 +12,7 @@ function App() {
   const fetchData = async (endpoint, setData) => {
     try {
       setLoading(true);
-      const response = await axios.get(`http://localhost:3000${endpoint}`);
+      const response = await axios.get(`https://test2-backend-bj6r.onrender.com${endpoint}`);
       setData(response.data);
       setError(null);
     } catch (err) {
